@@ -1,0 +1,34 @@
+name:                haskell-learning
+version:             0.1.0.0
+synopsis:            Simple project template from stack
+description:         Please see README.md
+homepage:            https://github.com/githubuser/haskell-learning#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Fredrik Lack
+maintainer:          fredrik@nody.se
+copyright:           2016 Fredrik Lack
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable haskell-learning
+  hs-source-dirs:     src
+  main-is:            Main.hs
+  default-language:   Haskell2010
+  build-depends:      base >= 4.7 && < 5,
+                      wai,
+                      warp,
+                      http-types,
+                      resourcet,
+                      scotty,
+                      text,
+                      bytestring,
+                      blaze-html,
+                      persistent,
+                      persistent-template,
+                      heroku,
+                      transformers,
+                      wai-middleware-static,
+                      wai-extra,
+                      time
